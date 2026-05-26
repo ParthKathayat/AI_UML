@@ -25,7 +25,7 @@ if "latest_compiled_diagrams" not in strl.session_state:
     strl.session_state.latest_compiled_diagrams = None  # Holds the current active charts
 
 # Define the local network address where your FastAPI backend is idling
-BACKEND_API_URL = "http://127.0.0.1:8000/api/v1"
+BACKEND_API_URL = "https://ai-uml-weld.vercel.app/api/v1"
 
 
 # --- 3. SIDEBAR CONFIGURATION AND META CONTROLS ---
