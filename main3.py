@@ -151,3 +151,6 @@ async def view_feedback_data_lake():
 async def health_check():
     """Provides an automated operational health ping route confirming backend uptime status."""
     return {"status": "healthy"}
+
+
+app = app
