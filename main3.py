@@ -16,6 +16,15 @@ load_dotenv()
 
 # Initialize the production core web server application
 app = FastAPI(title="Stateful AI UML Engine", version="2.0")
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], # Allows your local frontend tab to read the cloud responses safely
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 # --- 1. DATA CONTRACTS (Pydantic Input/Output Schemas) ---
